@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#ffffff;
+    --text-color:#000;
+    --btn-bg-color:#000000;
+    --btn-text-color:#fff;
+ }
+ [data-theme="dark"]{
+    --bg-color:#000;
+    --text-color:#ffffff;
+    --btn-bg-color:#ffffff;
+    --btn-text-color:#000;
+ }
+ body{
+    background-color:var(--bg-color);
+ }
+html{
+    scroll-behavior: smooth;
+}
+.gridLayout{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+.navigationbar {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .leftSideBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftSideBar a{
+    text-decoration: none;
+  }
+  .rightSideBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-button{
+    display: none;
+  }
+  .logoImage{
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .logoImage2{
+    margin-right: 30px;
+    margin-top:10px;
+    margin-left: 2px;
+  }
+  nav a{
+    height: 100%;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+  }
+  nav a:hover{
+    color: #f55;
+  }
+  .downloadbtn{
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  .downloadbtn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 400;
+  }
+    /* Herosection */
+.Herosection{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.HerosectionContent{
+    display: flex;
+    width: 45%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    background:url(Assets/Group\ 35930.png) ;
+    background-repeat: no-repeat;
+    background-position:top -280px center;
+}
+.HerosectionContent h1{
+    font-size: 55px;
+    font-weight: 1000;
+    font-family:"Poppins", sans-serif ;
+    color: var(--text-color);
+}
+.HerosectionContent p{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: gray;
+}
+.HerosectionContentButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px; 
+ }
+ .HerosectionContentButtonOne{
+     background-color: var(--btn-bg-color);
+     color: var(--btn-text-color);   
+     font-size: 18px;
+     font-family:"Poppins", sans-serif ;
+     padding: 10px 20px;
+     border-radius: 10px;
+     cursor: pointer;
+     border: none;
+     font-weight: 600;
+     border: 2px solid transparent;
+ }
+ .HerosectionContentButtonOne:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+ }
+ .HerosectionContentButtonTwo{
+    background-color:whitesmoke;
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ .HerosectionContentButtonTwo:hover{
+    border: 2px solid black;
+ }
+ .HerosectionContent img{
+    width: 80%;
+ }
+ .HerosectionImage{
+    width: 55%;
+ }
+ .HerosectionImage img{
+    width: 90%;
+    right: 0;
+ }
+ /* FeatureSection */
+ 
+ .FeatureSection{
+    background:url(Assets/Group\ 35930.png) ;
+    background-repeat: no-repeat;
+    background-position:right -300px center;
+ }
+ .FeatureSections{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+ }
+ .FeatureSectionImage{
+    width: 45%;
+ }
+ .FeatureSectionImage img{
+    width: 100%;
+    background: url(Assets/Group\ 35930.png);
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ .FeatureSectionContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+   margin-bottom: 70px;
+ }
+ .FeatureSectionContent h3{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    text-transform: uppercase;
+    color: #f55;
+    font-weight: bolder;
+ }
+ .FeatureSectionContent h2{
+    font-size: 45px;
+    font-family:"Poppins", sans-serif ;
+    font-weight: bolder;
+    color: var(--text-color);
+ }
+ .FeatureSectionsContents{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ .FeatureSectionContentOne,.FeatureSectionContentTwo,.FeatureSectionContentThree{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+ .FeatureSectionContentOne h4,.FeatureSectionContentTwo h4,.FeatureSectionContentThree h4{
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: var(--text-color);
+    font-weight: bolder;
+}
+.FeatureSectionContentOne p,.FeatureSectionContentTwo p,.FeatureSectionContentThree p{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: gray;
+}
+/* AdvantagesSection */
+.AdvantagesSection{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.AdvantagesSectionContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: flex-start;  
+}  
+.AdvantagesSectionContent h3{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: #f55;
+    text-transform: uppercase;
+}
+.AdvantagesSectionContent h2{
+    font-size: 45px;
+    font-family:"Poppins", sans-serif ;
+    font-weight: bolder;
+    color: var(--text-color);
+}
+.AdvantagesSectionContentOne{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.AdvantagesSectionContentOne h4{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 22px;
+    font-family:"Poppins", sans-serif ;
+    color: var(--text-color);
+    font-weight: bolder;
+}
+.AdvantagesSectionContentOne p{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: gray;
+}
+.AdvantagesSectionContentOne h4 img{
+    width: 40px;
+}
+.AdvantagesSectionImages{
+    width: 50%;
+}
+.AdvantagesSectionImages img{
+    width: 100%;
+    background: url(Assets/Group\ 35930.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* AdvantagesSectionTwo */
+.AdvantagesSectionTwo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.AdvantagesSectionsTwoImages{
+    width: 45%;
+}
+.AdvantagesSectionsTwoImages img{
+    width: 100%;
+}
+.AdvantagesSectionsTwoContent{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+    width: 55%;
+}
+.AdvantagesSectionsTwoContent h4{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 30px;
+    font-family:"Poppins", sans-serif ;
+    color: var(--text-color);
+    font-weight: bolder;
+}
+.AdvantagesSectionsTwoContent h4 img{
+    width: 50px;
+}
+.AdvantagesSectionsTwoContent p{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: gray;
+}
+.testimonials h4{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: #f55;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+}
+.testimonials h2{
+    font-size: 40px;
+    font-family:"Poppins", sans-serif ;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--text-color);
+}
+.reviewSection{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.reviewSectionImage{
+    width: 50%;
+}
+.reviewSectionImage img{
+    width: 100%;
+    background: url(Assets/Group\ 35930.png);
+    background-repeat: no-repeat;
+}
+.reviewSectionContent{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+}
+.reviewSectionContent h3{
+    font-size: 28px;
+    font-family:"Poppins", sans-serif ;
+    font-weight: bolder;
+    color: var(--text-color);
+}
+.reviewSectionContent p{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: gray;
+}
+.reviewSectionContent h6{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: var(--text-color);
+}
+.FaqSections h4{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: #f55;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.FaqSections h2{
+    font-size: 40px;
+    font-family:"Poppins", sans-serif ;
+    font-weight: bolder;
+    color: var(--text-color);
+}
+.FaqContainers{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.containerOne{
+    width: 45%;
+    padding: 30px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.containerOne h3{
+    font-size:26px;
+    font-family:"Poppins", sans-serif ;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.containerOne p{
+    font-size:17px;
+    font-family:"Poppins", sans-serif ;
+}
+.FaqContainersOne,.FaqContainersFour,.FaqContainersFive{
+    background-color: #f55;
+    color: white;
+}
+.FaqContainersTwo h3,.FaqContainersThree h3,.FaqContainersSix h3{
+  color: var(--text-color);
+}
+.FaqContainersTwo p,.FaqContainersThree p,.FaqContainersSix p{
+   color: gray;
+}
+/* readyToStartSection */
+.readyToStartSection{
+    width: 100%;
+    background: url(Assets/ad-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin: 50px 0px;
+    border-radius: 10px;
+}
+.readyToStartSectionContent{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 63%;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 40px 40px 40px;
+}
+.readyToStartSectionContent h2{
+    color: white;
+    font-size: 50px;
+    font-family:"Poppins", sans-serif ;
+    font-weight: bolder;
+}
+.readyToStartSectionContent p{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    color: white;
+}
+.readyToStartSectionContent button{
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.readyToStartSectionContent button:hover{
+    border: 2px solid black;
+}
+.readyToStartSectionContent button img{
+    width: 20px;
+}
+.readyToStartSectionImage{
+    width: 40%;
+}
+.readyToStartSectionImage img{
+     width: 100%;
+}
+/* Footer Section */
+.FooterSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+.FooterSectionLinks,.FooterSectionLegal,.FooterSectionProduct{
+    width: 13%;
+}
+.FooterSectionDetails{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+.FooterSectionDetails h6{
+    display: flex;
+    font-size: 18px;
+    gap: 10px;
+    font-family:"Poppins", sans-serif ;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.FooterSectionDetails h6 img{
+    width: 25px;
+}
+.FooterSectionDetails h3{
+    display: flex;
+    font-family:"Poppins", sans-serif ;
+    font-weight: bolder;
+    font-size: 24px;
+    gap: 5px;
+    color: var(--text-color);
+}
+.FooterSectionLinks,.FooterSectionLegal,.FooterSectionProduct,.FooterSectionNewsLetter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.FooterSectionLinks h3,.FooterSectionLegal h3,.FooterSectionProduct h3,.FooterSectionNewsLetter h3{
+    font-size: 26px;
+    font-family:"Poppins", sans-serif ;
+    font-weight: bolder;
+    color: var(--text-color);
+}
+.FooterSectionLinks h6,.FooterSectionLegal h6,.FooterSectionProduct h6,.FooterSectionNewsLetter h6{
+    font-size: 18px;
+    font-family:"Poppins", sans-serif ;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.FooterSectionNewsLetter{
+    width:25%;
+}
+.FooterSectionNewsLetterbutton{
+    display: flex;
+}
+.FooterSectionNewsLetterbutton input{
+    width: 200px;
+padding: 10px 15px;
+font-size: 16px;
+font-family:"Poppins", sans-serif ;
+outline: none;
+border-radius: 10px;
+border: none;
+background-color: whitesmoke;
+}
+.FooterSectionNewsLetterbutton button{
+    margin-left:-50px ;
+    padding: 8px 20px;
+    font-size: 16px;
+font-family:"Poppins", sans-serif ;
+border-radius: 10px;
+background-color: black;
+color: white;
+border: none;
+cursor: pointer;
+}
+hr{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.CopyRigths{
+   margin: 20px 0px;
+   text-align: center;
+   font-size: 18px;
+   font-family:"Poppins", sans-serif ;
+   font-weight: 400;
+   color: var(--text-color);
+}
+/* Animations */
+.Moblie::after ,.scrolling::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    bottom: -13px;
+    width: 100%;
+    background-color: #f55;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+.Moblie:hover::after ,.scrolling:hover::after{
+    transform: scaleX(1);
+}
+.Moblie ,.scrolling{
+    position: relative;
+}
+/* Floating Animation */
+.HerosectionImage img,.FeatureSectionImage img,.AdvantagesSectionImages img,.AdvantagesSectionsTwoImages img,.reviewSectionImage img,.readyToStartSectionImage img{
+    animation: floating ease 4s infinite;
+}
+@keyframes floating {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(0%, 2%);
+    }
+    50% {
+        transform: translate(0%, 0%);
+    }
+    75% {
+        transform: translate(0%, 2%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+  /* responsive */
+  @media screen and (min-width:1200px) {
+    .readyToStartSection{
+        background-repeat:repeat ;
+    }
+  }
+  @media screen and (max-width:1100px){
+    .FooterSection{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .FooterSectionDetails,.FooterSectionLinks,.FooterSectionLegal{
+        width: 30%;
+    }
+    .FooterSectionProduct,.FooterSectionNewsLetter{
+        width: 48%;
+    }
+  }
+  @media screen and (max-width: 900px){
+    .hideOnMobile{
+        display: none;
+      }
+      .menu-button{
+        display: block;
+      }
+  }  
+  @media screen and (max-width: 800px){
+    .Herosection{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .HerosectionContent,.HerosectionImage,.readyToStartSectionContent{
+        width: 100%;
+    }
+    .HerosectionContent{
+        background: none;
+    }
+    .HerosectionContent img{
+        display: none;
+    }
+    .FeatureSections,.reviewSection{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .FeatureSectionContent,.AdvantagesSectionsTwoContent{
+        width: 100%;
+        order: 1;
+    }
+    .FeatureSectionImage,.AdvantagesSectionsTwoImages{
+        width: 100%;
+        order: 2;
+    }
+    .FeatureSectionContent{
+        margin-bottom: 0px;
+    }
+    .FeatureSection{
+        background: none;
+    }
+    .AdvantagesSection,.AdvantagesSectionTwo{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .AdvantagesSectionContent,.reviewSectionContent{
+        width: 100%;
+    }
+    .AdvantagesSectionImages,.reviewSectionImage{
+        width: 100%;
+    }
+    .AdvantagesSectionImages img,.FeatureSectionImage img,.reviewSectionImage img,.readyToStart{
+        background: none;
+    }
+    .readyToStartSection img{
+          display: none;
+    }
+    .readyToStartSectionImage{
+        width: 0%;
+    }
+    .FooterSectionDetails,.FooterSectionLinks{
+        width: 45%;
+    }
+    .FooterSectionLegal,.FooterSectionProduct{
+        width: 45%;
+    }
+    .FooterSectionNewsLetter{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .AdvantagesSectionsTwoContent h4{
+        font-size: 25px;
+    } 
+    .AdvantagesSectionsTwoContent h4 img{
+        width: 35px;
+    }
+    .containerOne{
+        width: 100%;
+    }
+    .FaqContainersFour{
+        order: 3;
+    }
+    .FaqContainersThree{
+        order: 4;
+    }
+    .readyToStartSectionContent h2{
+        font-size: 30px;
+    }
+    .FooterSectionDetails,.FooterSectionLinks,
+    .FooterSectionLegal,.FooterSectionProduct,
+    .FooterSectionNewsLetter{
+        width: 100%;
+    }
+}

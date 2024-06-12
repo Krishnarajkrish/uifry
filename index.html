@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiFry-Financial Decisions</title>
+    <link rel="icon" href="Assets/logo (1).png">
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+     <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+        <!-- Navigation bar -->
+        <nav>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li class="scrolling"><a href="#HOME">Home</a></li>
+              <li class="scrolling"><a href="#ABOUT">About Us</a></li>
+              <li class="scrolling"><a href="#PRICING">Pricing</a></li>
+              <li class="scrolling"><a href="#FEATURES">Features</a></li>
+            </ul>        
+            <ul class="gridLayout">
+                <div class="navigationbar">
+                    <div class="leftSideBar">
+                        <li class="logoImage "><img src="Assets/logo (1).png" alt="logoimage" id="theme-toggle-button"></li>
+                        <li class="logoImage logoImage2"><img src="Assets/Vector (1).png" alt="logoimagecontent"></li>
+                        <li class="hideOnMobile Moblie"><a href="#HOME">Home</a></li>
+                        <li class="hideOnMobile Moblie"><a href="#ABOUT">About Us</a></li>
+                        <li class="hideOnMobile Moblie"><a href="#PRICING">Pricing</a></li>
+                        <li class="hideOnMobile Moblie"><a href="#FEATURES">Features</a></li>
+                    </div>
+                 <div class="rightSideBar">
+                    <li class="hideOnMobile"><a href="#"><button class="downloadbtn">Download</button></a></li> 
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+                 </div>
+                </div>
+            </ul>
+          </nav>
+<!-- Herosection -->
+<header> 
+<section id="HOME">
+      <div class="gridLayout">
+              <div class="Herosection">
+                     <div class="HerosectionContent"  data-aos="fade-up">
+                        <h1>Make The Best Financial Decisions</h1>
+                        <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
+                        <div class="HerosectionContentButtons">
+                            <button class="HerosectionContentButtonOne">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+                            <button class="HerosectionContentButtonTwo"><i class="fa-regular fa-circle-play"></i> Watch Video</button>
+                        </div>
+                        <img src="Assets/Group 35924.png" alt="herosectionimage" class="HerosectionImageLeft">
+                     </div>
+                     <div class="HerosectionImage"  data-aos="fade-up">
+                            <img src="Assets/iphone.svg" alt="herosectionimages">
+                     </div>
+              </div>
+      </div>
+</section>   
+</header>
+<main>
+    <!-- Features -->
+    <section id="FEATURES">
+            
+<div class="FeatureSection">
+    <div class="gridLayout">
+        <div class="FeatureSections">
+   <div class="FeatureSectionImage"  data-aos="fade-up">
+       <img src="Assets/first-img.svg" alt="FeatureSectionImage">
+   </div>
+   <div class="FeatureSectionContent" data-aos="fade-up">
+       <h3>Features</h3>
+       <h2>Uifry Premium</h2>
+       <div class="FeatureSectionsContents">
+        <div class="FeatureSectionContentOne">
+            <h4><img src="Assets/star-05.png" alt="FeatureSectionImage"> Budgeting Intervals</h4>
+            <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
+        </div>
+        <div class="FeatureSectionContentTwo">
+           <h4><img src="Assets/cube-02.png" alt="FeatureSectionImage">Budgeting Intervals</h4>
+           <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
+        </div>
+        <div class="FeatureSectionContentThree">
+            <h4><img src="Assets/cube-04.png" alt="FeatureSectionImage"> Budgeting Intervals</h4>
+            <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
+        </div>
+       </div>
+   </div>
+</div>
+</div>
+</div>
+    </section>
+<!-- Advanteages -->
+ <section>
+   <div class="gridLayout">
+       <div class="AdvantagesSection">
+                <div class="AdvantagesSectionContent" data-aos="fade-up">
+                   <h3>Advantages</h3>
+                   <h2>Why Choose Uifry?</h2>
+                   <div class="AdvantagesSectionContentOne">
+                    <h4><img src="Assets/notif.png" alt="AdvantagesSectionImages">Clever Notifications</h4>
+                    <p>Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.</p>
+                   </div>
+                </div>
+                <div class="AdvantagesSectionImages" data-aos="fade-up">
+                      <img src="Assets/second-img.svg" alt="AdvantagesSectionImages">
+                </div>
+       </div>
+   </div>
+ </section>
+ <section>
+    <div class="gridLayout">
+         <div class="AdvantagesSectionTwo">
+            <div class="AdvantagesSectionsTwoImages" data-aos="fade-up">
+                <img src="Assets/third-img.svg" alt="AdvantagesSectionsTwoImages">
+            </div> 
+            <div class="AdvantagesSectionsTwoContent" data-aos="fade-up">
+                 <h4><img src="Assets/star-filled.png" alt="AdvantagesSectionsTwoImages">Fully Customizable</h4>
+                 <p>Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.</p>
+             </div>
+         </div>
+    </div>
+ </section>
+ <section id="ABOUT">
+    <div class="gridLayout">
+          <div class="testimonials">
+              <h4>Testimonials</h4>
+              <h2>What Our Users Say About Us?</h2>
+              <div class="reviewSection">
+                   <div class="reviewSectionImage" data-aos="fade-up">
+                      <img src="Assets/Group 1000002332.png" alt="reviewSectionImage">
+                   </div>
+                   <div class="reviewSectionContent" data-aos="fade-up">
+                       <h3>The Best Financial Accounting App Ever!</h3>
+                       <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.”</p>
+                       <img src="Assets/Group 35917.png" alt="reviewSectionImage">
+                       <h6>Nick Jonas</h6>
+                   </div>
+              </div>
+          </div>
+    </div>
+ </section>
+ <section>
+    <div class="gridLayout">
+            <div class="FaqSections">
+                 <h4  data-aos="fade-up">FAQ</h4>
+                 <h2  data-aos="fade-up">Frequently Asked Questions</h2>
+                 <div class="FaqContainers">
+                    <div class="FaqContainersOne containerOne"  data-aos="fade-up">
+                        <h3>The Best Financial Accounting App Ever!</h3>
+                        <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                    </div>
+                    <div class="FaqContainersTwo containerOne"  data-aos="fade-up">
+                        <h3>The Best Financial Accounting App Ever!</h3>
+                        <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                    </div>
+                    <div class="FaqContainersThree containerOne"  data-aos="fade-up">
+                        <h3>The Best Financial Accounting App Ever!</h3>
+                        <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                    </div>
+                    <div class="FaqContainersFour containerOne"  data-aos="fade-up">
+                        <h3>The Best Financial Accounting App Ever!</h3>
+                        <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                    </div>
+                    <div class="FaqContainersFive containerOne"  data-aos="fade-up">
+                        <h3>The Best Financial Accounting App Ever!</h3>
+                        <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                    </div>
+                    <div class="FaqContainersSix containerOne"  data-aos="fade-up">
+                        <h3>The Best Financial Accounting App Ever!</h3>
+                        <p>“Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris.</p>
+                    </div>
+                 </div>
+            </div>
+    </div>
+ </section>
+ <section id="PRICING">
+    <div class="readyToStart">
+          <div class="gridLayout"> 
+                <div class="readyToStartSection">
+                          <div class="readyToStartSectionContent"  data-aos="fade-up">
+                             <h2>Ready To Get Started?</h2>
+                             <p>Risus habitant leo egestas mauris diam eget morbi tempus vulputate egestas mauris diam eget morbi tempus vulputate</p>
+                             <button>Download App <img src="Assets/apple.png" alt="readyToStartSectionImage"></button>
+                          </div>
+                          <div class="readyToStartSectionImage"  data-aos="fade-up">
+                               <img src="Assets/iPhone 13 Pro.png" alt="readyToStartSectionImage">
+                          </div>
+                </div>
+          </div>
+    </div>
+ </section>
+</main>
+<footer>
+<div class="gridLayout">
+     <div class="FooterSection">
+           <div class="FooterSectionDetails"  data-aos="fade-up">
+                <h3><img src="Assets/logo (1).png" alt="logoImage">Uifry</h3>
+                <h6><img src="Assets/email.png" alt="EmailImage">Help@Frybix.com</h6>
+                <h6><img src="Assets/phone.png" alt="PhoneImage">+1 234 456 678 89</h6>
+           </div>
+           <div class="FooterSectionLinks"  data-aos="fade-up">
+                 <h3>Links</h3>
+                 <h6>Home</h6>
+                 <h6>AboutUs</h6>
+                 <h6>Booking</h6>
+                 <h6>Blog</h6>
+           </div>
+           <div class="FooterSectionLegal"  data-aos="fade-up">
+                  <h3>Legal</h3>
+                  <h6>Terms Of Use</h6>
+                  <h6>Privacy Policy</h6>
+                  <h6>Cookie Policy</h6>
+           </div>
+           <div class="FooterSectionProduct"  data-aos="fade-up">
+                <h3>Product</h3>
+                <h6>Take Tour</h6>
+                <h6>Live Chats</h6>
+                <h6>Reviews</h6>
+           </div>
+           <div class="FooterSectionNewsLetter"  data-aos="fade-up">
+                 <h3>News Letter</h3>
+                 <h6>Stay Up To Date</h6>
+                 <div class="FooterSectionNewsLetterbutton">
+                    <input type="text" name="Subscribe" id="" placeholder="Your Email" >
+                    <button>Subscribe</button>
+                 </div>
+                
+           </div>
+     </div>
+     <hr>
+     <div class="CopyRigths">
+        <p>Copyright 2022 uifry.com all rights reserved</p>
+     </div>
+</div>
+</footer>
+          <script src="script.js"></script>
+</body>
+</html>
