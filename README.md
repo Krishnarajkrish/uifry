@@ -26,3 +26,4 @@
   <li>Animations</li>
 </ul>
 
+<h2>Note:To use Dark theme click the logo icon</h2>
